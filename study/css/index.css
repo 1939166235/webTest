@@ -1,0 +1,377 @@
+/* 这个是css文件是迎来美化首页的 */
+body{
+    background-color: #f3f5f7;
+}
+/* 全部页面标签边距归零 */
+*{
+    margin: 0;
+    padding: 0;
+    /* 盒子的内减模式 */
+    box-sizing: border-box;
+}
+/* 清除li的圆点 */
+li{
+    list-style: none;
+}
+/* 清除标签a的下划线 */
+a{
+    text-decoration: none;
+}
+/* 清除浮动的影响 */
+.clearfix::before,.clearfix::after{
+    content: ' ';
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+/* 版心居中 */
+.vrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 首页效果 */
+.header{
+    height: 42px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    margin: 30px auto;
+}
+/* 添加浮动 */
+h1{
+    float: left;
+}
+/* 首页顶部导航 */
+.nav{
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+    }
+.nav li{
+    display: inline-block;
+    margin-right: 26px;
+}
+.nav li a{
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #000;
+}
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+/* 搜索 */
+.search{
+    float: left;
+    width: 412px;
+    height: 40px;
+    margin-left: 59px;
+    border: 1px solid #00a4ff;
+    
+}
+/* 搜索框演示 */
+.search input{
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: 0;
+}
+/* 搜索提示框样式 */
+.search input::placeholder{
+    font-size: 14px;
+    color: #bfbfbf;
+}
+/*搜索按钮 */
+.search button{
+    float: right;
+    width: 50px;
+    height: 40px;
+    background-image: url(../image/btn.png);
+    border: 0;
+}
+/* 头像 */
+.user{
+        float: right;
+        margin-right: 35px;
+        height: 42px;
+        line-height: 42px;
+}
+.user img{
+    /* 调解头像垂直对齐方式，middle 居中 */
+    vertical-align: middle;
+}
+/* banner轮播图 */
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+/* 版心居中轮播的图片 */
+.banner .vrapper{
+    height: 420px;
+    background-image: url(../image/banner2.png);
+}
+
+
+/*                    左边盒子                    */
+.banner .left{
+    float: left;
+    padding: 0 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0,0,0, 0.3);
+
+    /* 行高是控制文字的属性，能继承 */
+    line-height: 44px;
+}
+
+/* 右边箭头位置 */
+.banner .left span{
+    float: right;
+}
+/*a 内容演示 */
+.banner .left a{
+    font-size: 14px;
+    color: #fff;
+}
+/* a 内容的选中样式 */
+.banner .left a:hover{
+    color: #00a4ff;
+}
+
+
+/*                    右边盒子                    */
+
+/* 左边盒子的整体样式 */
+.banner .right{
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+/* 盒子中的标题样式 */
+.banner .right h2{
+    font-size: 18px;
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+}
+
+/* 内容的上下左右内边距 */
+.banner .right .content{
+    padding: 0 18px;
+}
+
+/* div中dl的内边距，以及给盒子设置下边框线 */
+.banner .right .content dl{
+    padding: 12px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+/* dl中dt的具体内容样式 */
+.banner .right .content dt{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+/* dt中dd的具体内容样式 */
+.banner .right .content dd{
+    font-size: 14px;
+    color: #aba4a4;
+}
+
+/* 按钮超链接样式*/
+.banner .right .more{
+    display: block;
+    /* margin: 4px 14px 0; */
+    margin: 4px auto 0;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    color: #00a4ff;
+    font-weight: bold;
+    border: #00a4ff solid 2px;
+    /* 文字居中 */
+    text-align: center;
+    line-height: 40px;
+}
+
+/*                 精品推荐                        */
+
+/* 盒子样式 */
+.goods{
+    margin-top: 8px;
+    padding-left: 34px;
+    padding-right: 26px;
+    height: 60px;
+    background-color: #fff;
+    /* 添加阴影 */
+    box-shadow: 0px 2px 3px 0px
+    rgba(118,118,118, 0.2);
+
+    line-height: 60px;
+
+}
+
+/* 大标题：精品推荐 */
+.goods h2{
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 400px;
+    float: left;
+}
+
+/* 兴趣 */
+.goods ul{
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li{
+    float: left;
+}
+/* 竖线 */
+.goods li a{
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: #bfbfbf solid 1px;
+}
+
+/* 修改兴趣样式 */
+.goods .love{
+    font-size: 14px;
+    color: #00a4ff;
+    float: right;
+}
+
+/*                   精品课程                  */
+.learn{
+    margin-top: 35px;
+}
+
+/* 文字的样式 */
+.learn .title{
+    height: 40px;
+}
+
+/* 精品推荐样式 */
+.learn .title h2{
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+
+/* 查看全部样式 */
+.learn .title a{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+/* 课程展示样式 */
+.learn .content li{
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+}
+
+/* 课程边缘去掉边距 */
+.learn .content li:nth-child(5n){
+    margin-right: 0;
+}
+
+/* 主题样式 */
+.learn .content li h3{
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #050505;
+}
+
+/* 高级.***人  样式设置 */
+.learn .content li p{
+    padding: 0 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* 高级的样式 */
+.learn .content li p span{
+    color: #ff7c2d;
+}
+/* hot小图标 */
+.learn .content li .hot{
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
+
+/*                      版权                           */
+
+.footer{
+    margin-top: 40px;
+    height: 417px;
+    padding-top: 30px;
+    background-color: #fff;
+}
+/* 左边盒子 */
+.footer .left{
+    float: left;
+}
+
+.footer .left p{
+    margin: 20px 0 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .right{
+    float: right;
+}
+.footer .left a{
+    display: block;
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    color: #00a4ff;
+}
+
+/* 最右边盒子 */
+.footer .right{
+    float: right;
+}
+
+.footer .right dl{
+    float: left;
+    margin-left: 120px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.footer .right dt{
+    margin-bottom: 15px;
+}
+
+
+.footer .right dd{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.footer .right dd a{
+    color: #333333;
+}
